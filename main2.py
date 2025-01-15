@@ -11,7 +11,7 @@ with open("configuration.yaml","r") as file:
     print(data)
     print(data["test2_url"])
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    #chrome_options.add_argument("--headless")
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(6)
     driver.maximize_window()
